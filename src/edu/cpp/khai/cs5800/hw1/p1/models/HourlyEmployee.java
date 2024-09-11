@@ -39,7 +39,7 @@ public class HourlyEmployee extends Employee {
                 "%s| Hourly Wage: %-10s| Hours Worked: %-10s",
                 super.toString(),
                 this.getWage(),
-                getHoursWorked()
+                this.getHoursWorked()
         );
     }
 }
