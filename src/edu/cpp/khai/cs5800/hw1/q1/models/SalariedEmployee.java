@@ -1,4 +1,4 @@
-package edu.cpp.khai.cs5800.hw1.p1.models;
+package edu.cpp.khai.cs5800.hw1.q1.models;
 
 public class SalariedEmployee extends Employee {
     private double weeklySalary;

@@ -1,6 +1,6 @@
-package edu.cpp.khai.cs5800.hw1.p1.drivers;
+package edu.cpp.khai.cs5800.hw1.q1.drivers;
 
-import edu.cpp.khai.cs5800.hw1.p1.models.*;
+import edu.cpp.khai.cs5800.hw1.q1.models.*;
 
 public class EmployeeDriver {
     public static void main(String[] args) {
