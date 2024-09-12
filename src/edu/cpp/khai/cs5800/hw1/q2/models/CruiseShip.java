@@ -17,6 +17,8 @@ public class CruiseShip extends Ship {
     }
 
     public void print() {
-        System.out.printf("%s| Max Passengers: %-10s%n", this.getShipInfo(), this.getMaximumPassengers());
+        System.out.printf("%s| Max Passengers: %-10s%n",
+                this.getShipInfo(),
+                this.getMaximumPassengers());
     }
 }

@@ -6,7 +6,11 @@ public class CommissionEmployee extends Employee {
 
     private final static String EMP_TYPE = "Commission";
 
-    public CommissionEmployee(String firstName, String lastName, String security, double commissionRate, double grossSale) {
+    public CommissionEmployee(String firstName,
+                              String lastName,
+                              String security,
+                              double commissionRate,
+                              double grossSale) {
         super(firstName, lastName, security);
         this.commissionRate = commissionRate;
         this.grossSale = grossSale;
@@ -35,11 +39,9 @@ public class CommissionEmployee extends Employee {
 
     @Override
     public String toString() {
-        return String.format(
-                "%s| Commission Rate: %-5s | Gross Sale: %-10s",
+        return String.format("%s| Commission Rate: %-5s | Gross Sale: %-10s",
                 super.toString(),
                 this.getCommissionRate(),
-                this.getGrossSale()
-        );
+                this.getGrossSale());
     }
 }

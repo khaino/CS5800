@@ -9,7 +9,11 @@ import java.util.List;
 
 public class ModifiedCourseDriver {
     public static void main(String[] args) throws Exception {
-        ModifiedCourse course = new ModifiedCourse("Advanced Software Engineering", getInstructors(), getTextbooks());
+        ModifiedCourse
+                course =
+                new ModifiedCourse("Advanced Software Engineering",
+                        getInstructors(),
+                        getTextbooks());
         course.print();
     }
 

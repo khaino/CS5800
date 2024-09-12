@@ -5,7 +5,10 @@ public class SalariedEmployee extends Employee {
 
     private final static String EMP_TYPE = "Salary";
 
-    public SalariedEmployee(String firstName, String lastName, String security, float weeklySalary) {
+    public SalariedEmployee(String firstName,
+                            String lastName,
+                            String security,
+                            float weeklySalary) {
         super(firstName, lastName, security);
         this.weeklySalary = weeklySalary;
     }

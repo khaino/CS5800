@@ -10,7 +10,11 @@ public class ModifiedCourse {
     private List<Instructor> instructors;
     private List<Textbook> textbooks;
 
-    public ModifiedCourse(String name, List<Instructor> instructors, List<Textbook> textbooks) throws Exception {
+    public ModifiedCourse(
+            String name,
+            List<Instructor> instructors,
+            List<Textbook> textbooks
+    ) throws Exception {
         this.name = name;
         this.setInstructors(instructors);
         this.setTextbooks(textbooks);
@@ -30,7 +34,8 @@ public class ModifiedCourse {
 
     public void setInstructors(List<Instructor> instructors) throws Exception {
         if (instructors == null || instructors.size() != NUMBER_OF_INSTRUCTORS) {
-            throw new Exception(String.format("Only %s instructors can be added!", NUMBER_OF_INSTRUCTORS));
+            String msg = String.format("Only %s instructors can be added!", NUMBER_OF_INSTRUCTORS);
+            throw new Exception(msg);
         }
         this.instructors = instructors;
     }
@@ -41,7 +46,8 @@ public class ModifiedCourse {
 
     public void setTextbooks(List<Textbook> textbooks) throws Exception {
         if (textbooks == null || textbooks.size() != NUMBER_OF_TEXTBOOKS) {
-            throw new Exception(String.format("Only %s textbooks can be added!", NUMBER_OF_TEXTBOOKS));
+            throw new Exception(String.format("Only %s textbooks can be added!",
+                    NUMBER_OF_TEXTBOOKS));
         }
 
         this.textbooks = textbooks;

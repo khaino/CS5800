@@ -1,6 +1,6 @@
 package edu.cpp.khai.cs5800.hw1.q2.models;
 
-public class CargoShip extends Ship{
+public class CargoShip extends Ship {
     private int capacity;
 
     public CargoShip(String name, String yearBuilt, int capacity) {
