@@ -1,6 +1,5 @@
 package edu.cpp.khai.cs5800.hw1.q3.drivers;
 
-import edu.cpp.khai.cs5800.hw1.q3.models.Course;
 import edu.cpp.khai.cs5800.hw1.q3.models.Instructor;
 import edu.cpp.khai.cs5800.hw1.q3.models.ModifiedCourse;
 import edu.cpp.khai.cs5800.hw1.q3.models.Textbook;
