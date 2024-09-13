@@ -25,14 +25,14 @@ public class FolderDriver {
 
         phpDemo1.createSubFolder("Include Path");
         phpDemo1.createSubFolder("Remote Files");
-        phpDemo1.print(0);
+        phpDemo1.print();
         System.out.println("-------------------------");
 
         SourceFiles.deleteSubFolder("app");
-        phpDemo1.print(0);
+        phpDemo1.print();
         System.out.println("-------------------------");
 
         SourceFiles.deleteSubFolder("public");
-        phpDemo1.print(0);
+        phpDemo1.print();
     }
 }
