@@ -1,0 +1,21 @@
+@startuml
+'https://plantuml.com/object-diagram
+object "<u>c1Instructor:Instructor</u>" as c1Instructor {
+    firstName = "Nima"
+    lastName = "Davarpanah"
+    officeNumber = "3-2636"
+}
+
+object "<u>c1Textbook:Instructor</u>" as c1Textbook {
+    title = "Robert Cecil Martin"
+    author = "Pearson"
+    publisher = "CleanCode:A Handbook of Agile Software Craftsmanship"
+}
+
+object "<u>c1:Course</u>" as c1  {
+    name = "CS5800 - Advanced Software Engineering"
+}
+
+c1 o-- c1Instructor: instructors
+c1 o-- c1Textbook: textbooks
+@enduml

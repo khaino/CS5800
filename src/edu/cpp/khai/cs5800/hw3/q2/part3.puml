@@ -1,0 +1,92 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+object "<u>phpDemo1:Folder</u>" as phpDemo1 {
+    name = "php_demo1"
+}
+
+object "<u>:Folder</u>" as sourceFiles {
+    name = "Source Files"
+}
+
+object "<u>:Folder</u>" as includePath {
+    name = "Include Path"
+}
+
+object "<u>:Folder</u>" as remoteFiles {
+    name = "Remote Files"
+}
+
+phpDemo1 *-- sourceFiles
+phpDemo1 *-- includePath
+phpDemo1 *-- remoteFiles
+
+object "<u>:Folder</u>" as .phalcon {
+    name = ".phalcon"
+}
+
+object "<u>:Folder</u>" as app {
+    name = "app"
+}
+
+object "<u>:Folder</u>" as cache {
+    name = "cache"
+}
+
+object "<u>:Folder</u>" as public {
+    name = "public"
+}
+
+sourceFiles *-- .phalcon
+sourceFiles *-- app
+sourceFiles *-- cache
+sourceFiles *-- public
+
+object "<u>:Folder</u>" as config {
+    name = "config"
+}
+
+object "<u>:Folder</u>" as controllers {
+    name = "controllers"
+}
+
+object "<u>:Folder</u>" as library {
+    name = "library"
+}
+
+object "<u>:Folder</u>" as migrations {
+    name = "migrations"
+}
+
+object "<u>:Folder</u>" as models {
+    name = "models"
+}
+
+object "<u>:Folder</u>" as views {
+    name = "views"
+}
+
+app *-- config
+app *-- controllers
+app *-- library
+app *-- migrations
+app *-- models
+app *-- views
+
+object "<u>:File</u>" as htaccess {
+    name = ".htaccess"
+}
+
+object "<u>:File</u>" as htrouterPhp {
+    name = ".htrouter.php"
+}
+
+object "<u>:File</u>" as indexHtml {
+    name = "index.html"
+}
+
+public *-- htaccess
+public *-- htrouterPhp
+public *-- indexHtml
+
+@enduml

@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class File{
+    -String name;
+
+    +File(String name)
+    +String getName()
+    +void setName(String name)
+    +String toString()
+}
+
+Folder "1" *-- "many" File : contains
+Folder "1" *-- "many" Folder : contains
+
+class Folder{
+    -String name;
+    -ArrayList<Folder>subfolders;
+    -ArrayList<File>files;
+
+    +Folder()
+    +String getName()
+    +void setName(String name)
+    +void removeSubfolder(String subFolderName)
+    +void addSubfolder(String subFolderName)
+    +Folder getSubfolder(String subFolderName)
+    +boolean removeFile(File file)
+    +void addFile(String fileName)
+    +String toString()
+    +void printFolderContents()
+}
+@enduml
